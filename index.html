@@ -1,92 +1,127 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
-    integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
-    crossorigin="anonymous" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shaun Lee Personal Page</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
+        integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
+        integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/00cca67453.js" crossorigin="anonymous"></script>
 
     <style>
-      h1 {
-        font-size: 50px;
-      }
-  
-      html {
-        height: 100%;
-      }
-  
-      body {
-        font: 20px Helvetica, sans-serif;
-        color: #333;
-        padding-top: 6em;
-      }
-  
-      article {
-        display: block;
-        text-align: left;
-        width: 750px;
-        margin: 0 auto;
-        padding: 0 2em 1em 2em;
-        border-radius: 10px;
-        background-color: white;
-        border: lightgrey solid 1px;
-      }
-  
-      a {
-        color: #e09f3c;
-        text-decoration: none;
-      }
-  
-      a:hover {
-        color: #333;
-        text-decoration: none;
-      }
-  
-      #background-image {
-        position: fixed;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        width: 750px;
-        margin: 0 auto;
-        z-index: -100;
-      }
-  
-      @media only screen and (max-width: 768px) {
-        h1 {
-          font-size: 28px;
+        .lead {
+            font-size: 16pt;
         }
-  
-        body {
-          padding-top: 4em;
-        }
-  
-        article {
-          width: 80%;
-          padding: 0.25em 1em;
-        }
-  
-        #background-image {
-          width: 70%;
-        }
-      }
-    </style>
 
-  <title>Shaun Lee Personal Page</title>
+        .avatar {
+            width: 175px;
+            height: auto;
+        }
+
+        .icon-contacts {
+            font-size: 1.2em;
+            margin: 0.5em
+        }
+
+        .fa-linkedin-in {
+            padding: 0 1px;
+        }
+
+        .bio p {
+            font-family: 'Lora', serif;
+            font-size: 14pt;
+        }
+
+        .text-picture {
+            width: 100%;
+            height: auto;
+        }
+    </style>
 </head>
 
 <body>
-  <article>
-    <h1>Website is under construction</h1>
-    <div>
-      <p>This website is under construction. If you would like to contact me, feel free to send an e-mail to <a
-          href="mailto:shaun.lee@gessinternational.com">shaun.lee@gessinternational.com</a>.</p>
-      <p>&mdash; Shaun Lee</p>
+    <div class="container my-5 p-4">
+        <div class="row align-items-center g-4">
+            <img class="avatar rounded-circle col-auto" src="images/avatar.jpg" />
+            <div class="col px-4">
+                <h1>Shaun Lee</h1>
+                <h3 class="text-muted">Entrepreneur</h3>
+            </div>
+            <div id="contacts" class="col-auto">
+                <a class="link-primary" href="mailto:shaun.lee@gessinternational.com"><i class="icon-contacts fas fa-envelope"></i>shaun.lee@gessinternational.com</a>
+                <br>
+                <a class="link-primary" href="https://www.linkedin.com/in/shaun-lee-usa/"><i class="icon-contacts fab fa-linkedin-in"></i>Shaun Lee</a>
+                <br>
+                <a class="link-primary" href="tel:+1-954-257-4467"><i class="icon-contacts fas fa-phone"></i>954-257-4467</a>
+            </div>
+        </div>
     </div>
-  </article>
-  <img id="background-image" src="images/under-construction.png" />
+    <div class="container px-4 pb-5">
+        <p class="lead">Hi, I am Shaun Lee a fan of innovation, travel, and entrepreneurship.</p>
+        <div class="bio mt-4">
+            <h3>Summary Bio</h3>
+            <div class="row my-3">
+                <div class="col-lg">
+                    <p>
+                        Mr. Shaun Lee is third generation in the mechanical business. Mr. Lee has worked in all facets of the business from apprentice to CEO with more than 30 years in the mechanical industry (heating, air conditioning, refrigeration, lighting and plumbing) with over 23 years in Energy Efficiency, Renewable Energy and Co-Generation.
+                    </p>
+                    <p>
+                        Mr. Lee has completed over 350 Energy Efficiency Mechanical upgrade projects around North America and Eastern Europe. Mr. Lee saw the future of Energy in the Conservation Sector with Solar and bankable renewable energy technologies including Fuel Cells and Micro-Turbines back in 1997. His company installed one of the first Capstone Micro-Turbines in the United States in 1998 due to the need to reduce the demand electricity costs of his own mechanical company.
+                    </p>
+                </div>
+                <div class="col-10 col-md-8 col-lg-4 mx-auto">
+                    <img class="rounded text-picture" src="images/renewable.jpg" />
+                </div>
+            </div>
+            <div class="row my-3">
+                <div class="col-lg">
+                    <p>
+                        Mr. Lee completed water, electricity, and natural gas reduction with Co-generation projects in the State of Nevada for large scale casinos and in Southern California including Disneyland and Pechanga Casino. Mr. Lee worked on a facilitation agreement to develop projects quicker and easier. This process was accelerated with the development of energy saving projects in the Supermarket Industry. This Green Energy Sustainable Agreement “GESA” provided funding for stores all over the U.S. with Source Refrigeration and other large mechanical contractors.
+                    </p>
+                </div>
+                <div class="col-10 col-md-8 col-lg-4 order-lg-first mx-auto">
+                    <img class="rounded text-picture" src="images/wind-turbines.jpg" />
+                </div>
+            </div>
+            <div class="row my-3">
+                <div class="col-lg">
+                    <p>
+                        Mr. Lee, Director of Field Operations for GESS Ukraine, spent 7 years learning the Russian language and developing ideas for Eastern Europe. GESS using GESA worked with entire Cities in Ukraine including Myrgorod, Krivoy Rog and Zaporozyhe.
+                    </p>
+                    <p>
+                        As Director of Field Operations for &quot;GESS&quot; on July 1, 2013, signed a five-year Exclusive Dealer Agreement for Capstone Micro-Turbines in Ukraine. The Exclusive Agreement provided GESS Consulting Ukraine a cornerstone opportunity for long term success and sustainability. The Capstone Micro-turbine can produce electricity, hot water and cooling from the same fuel source making it an efficient use of Ukraine&#39;s available energy either with natural gas, biogas and or biomass. Capstone Micro-turbines creates numerous energy saving and on-site energy production opportunities.
+                    </p>
+                </div>
+                <div class="col-10 col-md-8 col-lg-4 mx-auto">
+                    <img class="rounded text-picture" src="images/kyiv.jpg" />
+                </div>
+            </div>
+            <div class="row my-3">
+                <div class="col-lg">
+                    <p>
+                        In 2017, Mr. Lee return to the U.S. to strategically benchmark sales of twenty (20) Utility grade renewable power to Smart Grid renewable natural gas (RNG) production projects for distribution to local and national utilities in North Carolina and South Carolina, Missouri, Idaho and Texas.
+                    </p>
+                    <p>
+                        Using Innovative thinking formulated sales approach for power planning utilizing micro-grid strategy, technology and controls for load and revenue for Eastern Band of Cherokee Indians pre-sale assessment for electricity load delivery voltage and supply including energy efficiency and Solar Renewable energy.
+                    </p>
+                </div>
+                <div class="col-10 col-md-8 col-lg-4 order-lg-first mx-auto">
+                    <img class="rounded text-picture" src="images/biogas.jpg" />
+                </div>
+            </div>
+        </div>
+        <div class="embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/zHG8OINYN90?rel=0" title="INDY 500 Harding Steinbrenner Racing, GESS International Media Announcement" allowfullscreen></iframe>
+        </div>
+    </div>
 </body>
 
 </html>
